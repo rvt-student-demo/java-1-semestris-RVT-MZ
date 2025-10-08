@@ -19,5 +19,7 @@ public class repeating_braking_remembering {
         }
         System.out.println("Summa ir " + sum);
         System.out.println("Reizes bija: " + quat);
+        System.out.println("Videjais ir: " + (sum / (double) quat));
+        
     }
 }
