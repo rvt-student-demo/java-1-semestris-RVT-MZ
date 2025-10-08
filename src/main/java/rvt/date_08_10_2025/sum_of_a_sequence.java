@@ -6,9 +6,11 @@ public class sum_of_a_sequence {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int sum = 0;
+        System.out.println("Ievadi pirmo skaitli: ");
+        int first_num = Integer.valueOf(scan.nextLine());
         System.out.println("Ievadi pedeju skaitli: ");
         int last_num = Integer.valueOf(scan.nextLine());
-        for (int i = 1; i <= last_num; i++) {
+        for (int i = first_num; i <= last_num; i++) {
             sum = sum + i;
         }
         System.out.println("Summa ir " + sum);
