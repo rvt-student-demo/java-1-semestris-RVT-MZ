@@ -7,6 +7,7 @@ public class repeating_braking_remembering {
         Scanner scan = new Scanner(System.in);
         System.out.println("Dod numurus:");
         int sum = 0;
+        int quat = 0;
         while (true) {
             int num = Integer.valueOf(scan.nextLine());
             if (num == -1) {
@@ -14,7 +15,9 @@ public class repeating_braking_remembering {
                 break;
             }
             sum = sum + num;
+            quat++;
         }
         System.out.println("Summa ir " + sum);
+        System.out.println("Reizes bija: " + quat);
     }
 }
