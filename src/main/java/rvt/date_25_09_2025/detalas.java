@@ -24,3 +24,4 @@ public class detalas {
         System.out.println("Kopeja cena: "+(price_skruve*quantity_skruve+price_uzgriezne*quantity_uzgriezne+price_paplaksne*quantity_paplaksne));
     }
 }
+A
