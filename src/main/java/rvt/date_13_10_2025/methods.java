@@ -2,10 +2,13 @@ package rvt.date_13_10_2025;
 
 public class methods {
     public static void main(String[] args) {
-        System.out.println("This is an main method");
-        hello_world();
+        String usr = "Maikus";
+        hi(usr,4);
     }
-    public static void hello_world() {
-        System.out.println("Hello world! (Hello world method)");
+    public static void hi (String usr, int times) {
+        for (int i = 0; i == times; i++) {
+            System.out.println("Hi "+usr);
+        }
     }
+    // void - neatgrež neko, atgrieš
 }
