@@ -1,32 +1,24 @@
 package rvt;
 
-import java.util.Scanner;
-
-import rvt.date_13_11_2025.Statistics;
+import rvt.date_13_11_2025.PaymentCard;
 
 public class main {
     public static void main(String[] args) {
-        Statistics statistics = new Statistics();
-        Statistics evenStatistics = new Statistics();
-        Statistics oddStatistics = new Statistics();
-        Scanner scan = new Scanner(System.in);
-        while (true) { 
-            int num = Integer.valueOf(scan.nextLine());
-            if (num == -1) {
-                break;
-            } else {
-                statistics.addNumber(num);
-                if (num % 2 == 0) {
-                    evenStatistics.addNumber(num);
-                } else {
-                    oddStatistics.addNumber(num);
-                }
-            }
-        }
-        System.out.println("Count: " + statistics.getCount());
-        System.out.println("Sum: " + statistics.sum());
-        System.out.println("Sum of even numbers: "+evenStatistics.sum());
-        System.out.println("Sum of odd numbers: "+oddStatistics.sum());
-        System.out.println("Average: " + statistics.average());
+        PaymentCard paulsCard=new PaymentCard(20);
+        PaymentCard mattsCard=new PaymentCard(30);
+        paulsCard.eatHeartily();
+        mattsCard.eatAffordably();
+        System.out.println("Paul: " +paulsCard);
+        System.out.println("Matt: " +mattsCard);
+        paulsCard.addMoney(20);
+        mattsCard.eatHeartily();
+        System.out.println("Paul: " +paulsCard);
+        System.out.println("Matt: " +mattsCard);
+        paulsCard.eatAffordably();
+        paulsCard.eatAffordably();
+        mattsCard.addMoney(50);
+        System.out.println("Paul: " +paulsCard);
+        System.out.println("Matt: " +mattsCard);
+        
     }
 }
